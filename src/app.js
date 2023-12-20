@@ -10,7 +10,7 @@ let when = [
 ];
 
 function SetRandomNumber(anArray) {
-  return Math.floor((Math.random() * 10) % anArray.length);
+  return;
 }
 
 function GenerateRandomExcuse() {
@@ -19,7 +19,7 @@ function GenerateRandomExcuse() {
   finalExcuse += action[SetRandomNumber(action) + " "];
   finalExcuse += what[SetRandomNumber(what) + " "];
   finalExcuse += when[SetRandomNumber(when)];
-  return "SiFunciono";
+  return finalExcuse;
 }
 let excuse = GenerateRandomExcuse();
 
