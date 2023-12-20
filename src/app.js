@@ -15,10 +15,10 @@ function SetRandomNumber(anArray) {
 
 function GenerateRandomExcuse() {
   let finalExcuse = "";
-  finalExcuse += who[SetRandomNumber(who)] + " ";
-  finalExcuse += action[SetRandomNumber(action) + " "];
-  finalExcuse += what[SetRandomNumber(what) + " "];
-  finalExcuse += when[SetRandomNumber(when)];
+  finalExcuse += who[Math.floor(Math.random() * who.length)] + " ";
+  finalExcuse += action[Math.floor(Math.random() * action.length)] + " ";
+  finalExcuse += what[Math.floor(Math.random() * what.length)] + " ";
+  finalExcuse += when[Math.floor(Math.random() * when.length)] + " ";
   return finalExcuse;
 }
 let excuse = GenerateRandomExcuse();
